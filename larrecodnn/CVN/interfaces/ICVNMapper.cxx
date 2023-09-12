@@ -5,6 +5,7 @@ namespace lcvn {
   template <class T, class U>
   ICVNMapper<T, U>::ICVNMapper(fhicl::ParameterSet const& pset)
     : EDProducer{pset}
+    , fPandoraTagSuffixes(pset.get<std::vector<std::string>>("PandoraTagSuffixes"))
     , fHitsModuleLabel(pset.get<std::string>("HitsModuleLabel"))
     , fClusterPMLabel(pset.get<std::string>("ClusterPMLabel"))
     , fMinClusterHits(pset.get<unsigned short>("MinClusterHits"))
