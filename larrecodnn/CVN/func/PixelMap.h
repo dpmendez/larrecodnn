@@ -82,6 +82,7 @@ namespace lcvn {
     std::vector<HitType> fLabX; ///< Vector of X Truth labels for pixels
     std::vector<HitType> fLabY; ///< Vector of Y Truth labels for pixels
     std::vector<HitType> fLabZ; ///< Vector of Y Truth labels for pixels
+    int sliceID; /// slice ID of pixel map
 
   private:
     unsigned int fNWire;   ///< Number of wires, length of pixel map
