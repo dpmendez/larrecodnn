@@ -29,6 +29,7 @@ namespace lcvn {
     , fBound(bound)
   {
     fTotHits = 0;
+    fSliceID = -1;
   }
 
   void PixelMap::FillInputVector(float* input) const
