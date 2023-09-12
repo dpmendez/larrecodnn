@@ -40,6 +40,9 @@ namespace lcvn {
     void produce(art::Event& evt);
 
   protected:
+    /// TPC suffixes
+    std::vector<std::string> fPandoraTagSuffixes;
+
     /// Module lablel for input clusters
     std::string fHitsModuleLabel;
 
